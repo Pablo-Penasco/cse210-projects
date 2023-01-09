@@ -13,6 +13,20 @@ class Program
         string userInputGuess = Console.ReadLine();
         int guessNumber = int.Parse(userInputGuess);
 
-        
+        if (guessNumber < x)
+        {
+            Console.WriteLine("Less");
+        }
+
+        if (guessNumber > x)
+        {
+            Console.WriteLine("Greater");
+        }
+
+        if (guessNumber == x)
+        {
+            Console.WriteLine("Correct!");
+        }
+
     }
 }
