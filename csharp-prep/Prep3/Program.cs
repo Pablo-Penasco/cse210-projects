@@ -5,9 +5,14 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("Please enter a random number: ");
-        string randomNumber = Console.ReadLine();
-        int x = int.Parse(randomNumber);
+        string userRandomNumber = Console.ReadLine();
+        int x = int.Parse(userRandomNumber);
 
-        Console.WriteLine($"{x}");
+        
+        Console.Write("Guess the random number: ");
+        string userInputGuess = Console.ReadLine();
+        int guessNumber = int.Parse(userInputGuess);
+
+        
     }
 }
