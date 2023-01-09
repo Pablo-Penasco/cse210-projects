@@ -9,23 +9,29 @@ class Program
         int x = int.Parse(userRandomNumber);
 
         
-        Console.Write("Guess the random number: ");
-        string userInputGuess = Console.ReadLine();
-        int guessNumber = int.Parse(userInputGuess);
+        
 
-        if (guessNumber < x)
-        {
-            Console.WriteLine("Less");
-        }
+        int guessNumber = 0;        
 
-        if (guessNumber > x)
-        {
-            Console.WriteLine("Greater");
-        }
 
-        if (guessNumber == x)
+        while (guessNumber != x)
         {
-            Console.WriteLine("Correct!");
+            Console.Write("Guess the random number: ");
+            string userInputGuess = Console.ReadLine();
+            guessNumber = int.Parse(userInputGuess);
+            
+                if (guessNumber < x)
+            {
+                Console.WriteLine("Less");
+            }
+            else if (guessNumber > x)
+            {
+                Console.WriteLine("Greater");
+            }
+            else
+            {
+                Console.WriteLine("You guessed it! You must have ESPN!(joke) ");
+            }
         }
 
     }
