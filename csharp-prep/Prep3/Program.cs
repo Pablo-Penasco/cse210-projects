@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Prep3 World!");
+        Console.Write("Please enter a random number: ");
+        string randomNumber = Console.ReadLine();
+        int x = int.Parse(randomNumber);
+
+        Console.WriteLine($"{x}");
     }
 }
